@@ -1,0 +1,126 @@
+/* --- Estilos Generales --- */
+body {
+    display: flex;
+    flex-direction: column; /* Apila los módulos verticalmente */
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    background: #f0f0f0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.module-container {
+    width: 100%;
+    max-width: 400px; /* Ancho máximo para ambos módulos */
+    margin-bottom: 40px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Módulo de Calculadora --- */
+.calculator {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#display {
+    background: #222;
+    color: white;
+    font-size: 2.5em;
+    padding: 20px;
+    text-align: right;
+    height: 60px;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 1px;
+}
+
+.buttons button {
+    padding: 20px;
+    font-size: 1.2em;
+    border: none;
+    background: #e0e0e0;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.buttons button:hover {
+    background: #d0d0d0;
+}
+
+.operator {
+    background: #f39c12;
+    color: white;
+}
+
+.operator:hover {
+    background: #e68e00;
+}
+
+.zero {
+    grid-column: span 2;
+}
+
+
+/* --- Módulo de To-Do List --- */
+.todo-app {
+    width: 100%;
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#todo-input {
+    flex-grow: 1; /* El input toma el espacio disponible */
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+#add-task-btn {
+    padding: 10px 15px;
+    font-size: 1em;
+    border: none;
+    background: #28a745;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    transition: background 0.2s;
+}
+
+#add-task-btn:hover {
+    background: #218838;
+}
+
+#todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#todo-list li {
+    background: #f9f9f9;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    font-size: 1.1em;
+    /* Los estilos de 'completada' se aplican por JS (en app-legacy.js) */
+}
