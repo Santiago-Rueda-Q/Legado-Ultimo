@@ -1,7 +1,3 @@
 # Santiago Rueda QUINTERO
 
-## Español
-[ReporteSemana4-Santiago-Español.pdf](https://github.com/user-attachments/files/23339621/ReporteSemana4-Santiago-Espanol.pdf)
-
-## Ingles
-[ReporteSemana4-Santiago-Ingles.pdf](https://github.com/user-attachments/files/23339617/ReporteSemana4-Santiago-Ingles.pdf)
+[Taller de Auditoría Comparativa Profesional Final.pdf](https://github.com/user-attachments/files/23481759/Taller.de.Auditoria.Comparativa.Profesional.Final.pdf)
